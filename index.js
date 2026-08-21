@@ -135,6 +135,7 @@ function connect() {
     port: Number(process.env.SERVER_PORT),
     username: process.env.BOT_USERNAME || "AFKBot",
     offline: true
+    raknetBackend: "jsp-raknet"
   });
 
   client.on("join", () => {
